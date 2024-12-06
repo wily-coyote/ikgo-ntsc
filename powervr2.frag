@@ -30,6 +30,7 @@ const float dithertable[16] = float[16](
 void main(void) {
 	// the original code used a lot of redundant texture sampling, reducing performance drastically
 	vec2 uv = vTexCoord.xy;
+	uv.y -= 2.0 / 480.0; // offset fix from NTSC, fixed value
 	vec4 color;
 	float fc = floor(mod(CurrentTime*60.0, 2.0));
 	// Blend vertically for composite mode
