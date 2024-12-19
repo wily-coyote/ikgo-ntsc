@@ -239,7 +239,7 @@ vec4 fetch_offset(float offset, float one_x, float one_y){
 void main(void) {
 	// begin ntsc-pass2-gamma
 
-	float one_y = -(1.0 / (DISPLAY_SIZE.y));
+	float one_y = 0;//-(1.0 / (DISPLAY_SIZE.y));
 	float one_x = 1.0 / (DISPLAY_SIZE.x * 4.0);
 	vec3 signal = vec3(0.0);
 	for (int i = 0; i < TAPS; i++)
