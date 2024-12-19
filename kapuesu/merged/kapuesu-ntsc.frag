@@ -211,7 +211,7 @@ vec4 fetch_offset(float offset, float one_x){
 	
 	float FrameCount = floor(mod(CurrentTime*60.0, 2.0));
    	
-	vec2 offset2 = vTexCoord.xy + vec2((offset) * (one_x));
+	vec2 offset2 = vTexCoord.xy + vec2((offset) * (one_x), 0.0);
 	vec3 col = COMPAT_TEXTURE(Texture, offset2).rgb;
 	vec3 yiq = rgb2yiq(col);
 	
