@@ -9,3 +9,9 @@ Port of RetroArch's NTSC shader to IKEMEN-GO.
 Based on Japanese CvS2 videos. Combines RetroArch's NTSC and PowerVR2 and slightly brightens the picture.
 ### powervr2
 Port of RetroArch's PowerVR2 shader to IKEMEN-GO.
+### level
+NTSC output usually has a brighter black level. This shader does that. It can also darken output.
+### border
+Crops away a black border in the output.
+### scale
+Scales the image.
